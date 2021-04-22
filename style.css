@@ -1,0 +1,87 @@
+/*
+    Navbar
+*/
+
+/*
+    Data
+*/
+#data {
+    /* CSS Gradient io */
+    background: rgb(95,53,177);
+    background: -moz-linear-gradient(135deg, rgba(95,53,177,1) 0%, rgba(95,53,177,1) 0%, rgba(53,152,211,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(95,53,177,1) 0%, rgba(95,53,177,1) 0%, rgba(53,152,211,1) 100%);
+    background: linear-gradient(135deg, rgba(95,53,177,1) 0%, rgba(95,53,177,1) 0%, rgba(53,152,211,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f35b1",endColorstr="#3598d3",GradientType=1); 
+}
+#dataInside{
+    background-color: #31213c;
+    border-radius: 15px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+
+    -webkit-box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.75);
+}
+.value{
+    color:bisque;
+    margin-right: 0.7em;
+}
+.valueText{
+    color: orange;
+    margin-right: 0.7em;
+}
+.code{
+    padding:0 0 1.3em 0.5em;
+}
+.code>p{
+    margin-bottom: 0 !important;
+}
+.indented{
+    margin-left: 2em;
+}
+
+.circle{
+    position: absolute;
+    color: transparent;
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+.one{
+    left: 4.5em;
+    background-color: #ff5f56
+}
+.two{
+    left: 6.5em;
+    background-color: #ffbd2e;
+}
+.three{
+    left: 8.5em;
+    background-color: #27c93f;
+}
+
+#profile{
+    max-width: 12em;
+    border-radius: 50%;
+}
+#profile:hover{
+    filter: grayscale(50%);
+}
+
+/* 
+    Technologies
+*/
+#imgcore{
+    max-height: 600px;
+}
+
+
+/* Media querys */
+
+@media (max-width: 576px) { 
+    .one, .two, .three{
+        display: none;
+    }
+}
