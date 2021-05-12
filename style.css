@@ -5,9 +5,23 @@ body{
 /*
     Navbar
 */
+.container-navbar{
+    position: fixed; 
+    z-index:1;
+}
 #navbar{
     background-color: #31213c;
     color: white;
+    border-bottom: 2px solid orange;
+}
+#navbar a{
+    color: white;
+}
+#navbarLogo{
+    border-radius: 50%;
+}
+.navbar-toggler-icon{
+    color: white !important;
 }
 /*
     Data
@@ -21,6 +35,8 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f35b1",endColorstr="#3598d3",GradientType=1); 
 }
 #dataInside{
+    margin-top: 2em;
+
     background-color: #31213c;
     border-radius: 15px;
     font-family: 'Source Code Pro', monospace;
@@ -122,6 +138,14 @@ li i{
 
 #scene, .education div{padding: 0;}
 
+/* */
+.container-scene{
+    display: block;
+}
+.container-scene-small{
+    display: none;
+}
+/* */
 
 .container-scene{
     display: flex;
@@ -136,7 +160,7 @@ li i{
     margin: 25% auto;
     width: 60%;
     background-color: #2b4ea0 !important;
-    transform: skew(20deg)
+    transform: skew(20deg);
 }
 
 .cardInfoEdu:before {
@@ -159,8 +183,11 @@ li i{
 	transform: skew(-20deg);
 }
 
-/*  */
+/* Footer  */
 
+.footer{
+    border-top: 2px solid #d0d0d0;
+}
 
 
 /* Selection */
@@ -187,5 +214,16 @@ li i{
     }
     .techList{
         justify-content: center !important;
+    }
+    .container-scene-small{
+        display: block;
+        background-color: #d0d0d0;
+    }
+    .container-scene{
+        display: none;
+    }
+    .cardInfoEdu{
+        transform: skew(0);
+        width: 100%;
     }
 }

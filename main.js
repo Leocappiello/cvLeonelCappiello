@@ -1,5 +1,3 @@
-console.log('works')
-
 //key value 
 let keys = document.getElementsByClassName('key')
 let values = document.getElementsByClassName('valueText')
